@@ -18,20 +18,23 @@
  * @package WordPress
  */
 
-
-define('FS_METHOD', 'direct');
+// define('FS_METHOD', 'direct');
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'caracolitodb');
+// define('DB_NAME', 'caracolitodb');
+define('DB_NAME', 'heroku_746cabffbe9c70f');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+// define('DB_USER', 'root');
+define('DB_USER', 'b530ba941584d9');
 
 /** MySQL database password */
-define('DB_PASSWORD', '');
+// define('DB_PASSWORD', '');
+define('DB_PASSWORD', '451e0b0d');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+// define('DB_HOST', 'localhost');
+define('DB_HOST', 'us-cdbr-iron-east-05.cleardb.net');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');
