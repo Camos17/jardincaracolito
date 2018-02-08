@@ -22,15 +22,15 @@
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 // define('DB_NAME', 'caracolitodb');
-define('DB_NAME', 'heroku_746cabffbe9c70f');
+define('DB_NAME', 'heroku_a11a36e5824b3c3');
 
 /** MySQL database username */
 // define('DB_USER', 'root');
-define('DB_USER', 'b530ba941584d9');
+define('DB_USER', 'bd88e087a42eb8');
 
 /** MySQL database password */
 // define('DB_PASSWORD', '');
-define('DB_PASSWORD', '451e0b0d');
+define('DB_PASSWORD', 'e77d18a9');
 
 /** MySQL hostname */
 // define('DB_HOST', 'localhost');
