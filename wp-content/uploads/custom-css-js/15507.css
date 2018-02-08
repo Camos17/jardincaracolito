@@ -1,0 +1,541 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Montserrat:400,500|Oxygen:400,700');
+
+@font-face {
+  font-family: 'Magnolia';
+  src: url('wp-content/themes/bridge/css/fonts/magnolia_sky-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('wp-content/themes/bridge/css/fonts/magnolia_sky-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('wp-content/themes/bridge/css/fonts/magnolia_sky.otf')  format('otf'), /* Safari, Android, iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ESTILOS GENERALES */
+
+a, button {
+  outline: 0;
+}
+
+ul {
+  padding: 0px 20px;
+  list-style-position: outside;
+}
+
+ul.listText li {
+  list-style-type: disc;
+  line-height: 15px;
+}
+
+.backgroundPurple {
+  background-color: #5B196F;
+}
+
+.backgroundLightViolet {
+	background-color: #CD0067;
+}
+
+.backgroundPink {
+	background-color: #CE1980;
+}
+
+.paddingLateral {
+	padding: 0px 15px;
+}
+
+.containerServActivHome .section_inner {
+	width: 90%;
+}
+
+.carousel-control.left, .carousel-control.right,
+.carousel-control .next_nav, .carousel-control .prev_nav {
+  	opacity: 1 !important;
+}
+
+.carousel-control .next_nav, .carousel-control .prev_nav {
+	border: 4px solid #FFF;
+}
+
+.carousel-control i {
+	font-size: 35px;
+  	font-weight: 600;
+  	position: relative;
+}
+
+.carousel-indicators li {
+	width: 14px;
+  	height: 14px;
+  	margin: 0px 7px;
+  	-webkit-transition: opacity .6s ease-in-out;
+    -moz-transition: opacity .6s ease-in-out;
+    -o-transition: opacity .6s ease-in-out;
+    -ms-transform: opacity .6s ease-in-out;
+    transition: opacity .6s ease-in-out;
+}
+
+.carousel-indicators .active {
+	margin: 0px 7px;
+  	width: 14px;
+  	height: 14px;
+}
+
+.contentBanner {
+	padding: 0px 8%;
+}
+
+.q_elements_item_content {
+    padding: 0px 25px 0px 25px !important;
+}
+
+/* HELPERS */
+
+.textWhite {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+h4.tituloSecHome {
+  color: #FFF;
+}
+
+h4.tituloAliados {
+  color: #2BA1C8;
+}
+
+h5.style2 {
+  font-family: 'Fredoka One', cursive;
+  color: #FFF;
+  font-size: 1.55rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 25px;
+}
+
+h5.style3 {
+  font-size: 1.55rem;
+}
+
+h6.titleContactForm {
+  margin-bottom: 10px;
+}
+
+/* ESTILOS ADICIONALES HEADER MENU */
+
+nav.mobile_menu>ul {
+	padding-bottom: 25px;
+}
+
+nav.mobile_menu ul li a,
+nav.mobile_menu ul li a:hover, 
+nav.mobile_menu ul li.active > a, 
+nav.mobile_menu ul li.current-menu-item > a{
+  	/*font-weight: 700;*/
+  	color: #FFF;
+}
+
+nav.mobile_menu ul li, 
+nav.mobile_menu ul li ul li {
+    border-bottom: none;
+}
+
+nav.main_menu > ul > li:active > a,
+nav.main_menu > ul > li:focus > a,
+nav.main_menu ul li.active a,
+header.sticky nav.main_menu > ul > li:hover > a,
+header.sticky nav.main_menu > ul > li:active > a,
+header.sticky nav.main_menu > ul > li:focus > a {
+	background-color: #95C7EB !important;
+  	color: #000098 !important;
+  	font-weight: 700;
+}
+
+.drop_down .narrow .second .inner ul li {
+    padding: 0;
+    width: 205px;
+}
+
+.drop_down .wide .second>.inner>ul>li.sub>ul>li>a, 
+.drop_down .second .inner ul li a, 
+.drop_down .wide .second ul li a, 
+.drop_down .second .inner ul.right li a {
+  text-align: center;
+  border-bottom: 1px solid #FFF;
+  width: 135px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+header.sticky nav.main_menu > ul > li > a {
+	font-weight: 300;
+  	color: #FFF !important;
+}
+
+header.sticky nav.main_menu > ul > li.active > a span,
+header.sticky nav.main_menu > ul > li:hover > a > span {
+	font-weight: 300;
+  	color: #000098 !important;
+}
+
+header.sticky nav.main_menu > ul > li.active > a, 
+header.sticky nav.main_menu > ul > li:hover > a,
+header.sticky nav.main_menu > ul > li:active > a,
+header.sticky nav.main_menu > ul > li:focus > a {
+  	background-color: #95C7EB !important;
+  	color: #000098 !important;
+}
+
+.drop_down .narrow .second .inner ul li a {
+  background-color: transparent !important;
+  color: #FFF !important;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+li.narrow .second .inner ul {
+    padding: 0px;
+}
+
+li.narrow .second .inner ul li:last-child a {
+	border-bottom: none;
+}
+
+.drop_down .narrow .second .inner ul li:hover,
+.drop_down .narrow .second .inner ul li:active,
+.drop_down .narrow .second .inner ul li:focus{
+	background-color: #95C7EB;
+}
+
+.drop_down .second .inner > ul > li > a {
+	font-weight:700;	
+}
+
+.drop_down .second .inner > ul > li > a:hover,
+.drop_down .second .inner > ul > li > a:focus,
+.drop_down .second .inner > ul > li > a:active,
+.drop_down .wide .second ul li ul li.menu-item-has-children > a:hover, 
+.drop_down .wide .second .inner ul li.sub ul li.menu-item-has-children > a:hover {
+	color: #FFF !important;
+  	font-weight:700;	
+}
+
+/* HOME */
+
+.admisionHOme {
+	width: 350px;
+    height: 250px;
+    position: absolute;
+    background-color: rgba(255, 201, 0, 0.7);
+    bottom: 0;
+}
+
+.containerInfoAdminHome {
+	position: relative;
+  	display: block;
+   	top: 39%;
+  	transform: translateY(-50%);
+  	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+   	-o-transform: translateY(-50%);
+  	text-align: center;
+}
+
+.containerInfoAdminHome p {
+	font-family: 'Fredoka One', cursive;
+  	font-size: 1.7rem;
+  	font-weight: 500;
+  	text-transform: uppercase;
+  	color: #CD0067;
+  	padding: 15px;
+  	line-height: 35px;
+}
+
+.containerInfoAdminHome button {
+	padding: 12px 16px 10px;
+    background-color: #ce1980;
+    box-shadow: none;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.layerInfAdmisioHome {
+	background-color: #FFC900;
+  	padding-top: 25px;
+  	padding-bottom: 25px;
+    position: absolute;
+    bottom: 0;
+  	left: 0;
+    display: inline-block;
+	width: 100%;
+}
+
+/* ESTILOS LAYER OPCIONES MENU HOME */
+
+.containerLayerOption {
+	margin-bottom: 30px;
+  	overflow: hidden;
+  	height: 405px;
+}
+
+.layerOptions {
+	height: 100%;
+  	width: 100%;
+  	position: absolute;
+  	display: block;
+	top: 0;  	
+  	left: 0;
+  	opacity: 0.7;
+}
+
+.containerPrueba {
+	padding-left: 15px;
+  	padding-right: 15px;
+  	position: relative;
+  	float: left;
+  	width: 33.333%;
+}
+
+.pruebaImg {
+	background: url('http://localhost/caracolito/wp-content/uploads/2017/12/1.jpg') no-repeat center center;
+ 	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+/* CONTACTO */
+
+.contact_form input[type=email],
+.contact_form input[type=text],
+.contact_form textarea {
+  border-radius: 6px;
+  background-color: #E4CADA;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.contact_form input[type=submit] {
+  height: 35px;
+  color: #FFF;
+  background-color: #8E2566;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1rem;
+  text-transform: Capitalize;
+  font-weight: 800;
+  border: none;
+  border-radius: 6px;
+  padding: 3px 30px;
+}
+
+/*  FOOTER*/
+
+.footerTopAliados {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footerTopAliados h4 {
+  font-family: 'Fredoka One', cursive;
+  color: #FFF;
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.logosAliados {
+  margin-top: 25px;
+  display: inline-block;
+}
+
+.imgALiado {
+    width: 25%;
+    display: inline-block;
+    float: left;
+}
+
+.wrapperImgAliados {
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imgAliado img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.contendorTextoFooter {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 0.9rem;
+  text-align: center;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ccc;
+  line-height: 20px;
+}
+
+.footer_top p {
+  margin-top: 20px;
+}
+
+.footer_top .two_columns_50_50 {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 480px) {
+  .admisionHOme {
+    	right: 70px;
+  }
+  
+  .layerOptionsImg {
+		margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .containerServActivHome .section_inner {
+  		/*width: 930px !important;*/
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  	
+  .content {
+    padding: 0px 0%;
+  }
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+	
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  
+  .contenedorImgBanner .full_section_inner {
+    padding: 0px !important;
+  }
+	
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  
+  .contenedorImgBanner .full_section_inner {
+    padding: 0px !important;
+  }
+  
+  .imgALiado {
+    width: 50%;
+  }
+  
+  .separator.small, .wpb_column>.wpb_wrapper .separator.small {
+	width: 200px;
+    margin-bottom: 40px;
+  }
+	
+}
+
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+  
+  .contenedorImgBanner .full_section_inner {
+    padding: 0px !important;
+  }
+  
+    
+  .imgALiado {
+    width: 50%;
+  }
+  
+  .footer_top .two_columns_50_50 {
+    width: 100%;
+  }
+  
+  .contendorTextoFooter {
+    width: 100%;
+  }
+  
+  .separator.small, .wpb_column>.wpb_wrapper .separator.small {
+	width: 200px;
+    margin-bottom: 40px;
+  }
+  
+  
+}
+
+@media only screen and (max-width: 480px) {
+  
+  .containerServActivHome .section_inner {
+  		/*width: 330px !important;*/
+  }
+  
+  .containerAdmicionHome {
+    position: absolute !important;
+    width: 100%;
+    top: -250px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  
+  .admisionHOme {
+    width: 350px;
+    height: 250px;    
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    background-color: rgba(255, 201, 0, 0.7);
+  }
+  
+  .contenedorImgBanner .full_section_inner {
+    padding: 0px !important;
+  }
+  
+  .imgALiado {
+    width: auto;
+    display: block;
+    float: none;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .footer_top .two_columns_50_50 {
+    width: 100%;
+  }
+  
+  .contendorTextoFooter {
+    width: 100%;
+  }
+  
+  .separator.small, .wpb_column>.wpb_wrapper .separator.small {
+	width: 200px;
+    margin-bottom: 40px !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .admisionHOme {
+    width: 100%;
+  }
+}
+
+
+</style>
+<!-- end Simple Custom CSS and JS -->

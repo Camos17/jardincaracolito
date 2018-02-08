@@ -1,0 +1,10 @@
+			@font-face {
+				font-family: 'magnolia-sky';
+				font-style: normal;
+				src: url('/caracolito/wp-content/uploads/useanyfont/180205010503Magnolia-Sky.eot');
+				src: local('magnolia-sky'), url('/caracolito/wp-content/uploads/useanyfont/180205010503Magnolia-Sky.eot') format('embedded-opentype'), url('/caracolito/wp-content/uploads/useanyfont/180205010503Magnolia-Sky.woff') format('woff');
+			}
+            
+            .et_gf_magnolia-sky{background:none !important;font-family:magnolia-sky;text-indent:0 !important;font-size:25px;}
+            
+		
