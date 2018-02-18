@@ -32,12 +32,24 @@ ul.listText li {
   background-color: #5B196F;
 }
 
+.backgroundPurpleOpacity {
+  background-color: rgba(91, 25, 111, 0.7);
+}
+
 .backgroundLightViolet {
 	background-color: #CD0067;
 }
 
+.backgroundLightVioletOpacity {
+	background-color: rgba(205, 0, 103, 0.7);
+}
+
 .backgroundPink {
 	background-color: #CE1980;
+}
+
+.backgroundPinkOpacity {
+	background-color: rgba(206, 25, 128, 0.7);
 }
 
 .paddingLateral {
@@ -267,7 +279,7 @@ li.narrow .second .inner ul li:last-child a {
     font-weight: 600;
 }
 
-.layerInfAdmisioHome {
+.layerInfAdmisioHome { 
 	background-color: #FFC900;
   	padding-top: 25px;
   	padding-bottom: 25px;
@@ -283,7 +295,7 @@ li.narrow .second .inner ul li:last-child a {
 .containerLayerOption {
 	margin-bottom: 30px;
   	overflow: hidden;
-  	height: 405px;
+  	height: 435px;
 }
 
 .layerOptions {
@@ -291,26 +303,117 @@ li.narrow .second .inner ul li:last-child a {
   	width: 100%;
   	position: absolute;
   	display: block;
-	top: 0;  	
+	top: 0;
   	left: 0;
   	opacity: 0.7;
 }
 
-.containerPrueba {
-	padding-left: 15px;
-  	padding-right: 15px;
+.containerImgFondo {
   	position: relative;
   	float: left;
-  	width: 33.333%;
+  	width: 100%;
 }
 
-.pruebaImg {
-	background: url('http://localhost/caracolito/wp-content/uploads/2017/12/1.jpg') no-repeat center center;
- 	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
+.containerImgFondo:hover .layerOptionsMenu {
+  bottom: 0;
+  transition: all 0.8s ease-in-out;
 }
+
+.containerImgFondo:hover .tituloLayerOpt i {
+  transform: rotate(90deg);
+  transition: all 0.8s ease-in-out;
+}
+
+.imgFondoMenuHome {
+  height: 435px;
+}
+
+.imgFondo1 {  
+  background: url('http://localhost/caracolito/wp-content/uploads/2017/12/1.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.imgFondo2 {  
+  background: url('http://localhost/caracolito/wp-content/uploads/2017/12/2.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.imgFondo3 {  
+  background: url('http://localhost/caracolito/wp-content/uploads/2017/12/3.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.layerOptionsMenu {
+  bottom: -338px;
+  height: inherit;
+  position: relative;
+  transition: all 0.8s ease-in-out;
+}
+
+.linksLayerMenu {
+  height: calc(100% - 70px);
+}
+
+.tituloLayerOpt {
+  height: 40px;
+  padding: 15px;
+  text-align: center;
+  color: #FFF;
+}
+
+.tituloLayerOpt h4 {
+  color: #FFF;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.5rem;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.tituloLayerOpt i {
+  border: 2px solid #FFF;
+  font-size: 1rem;
+  border-radius: 50%;
+  padding: 0px 5px;
+  position: relative;
+  top: 3px;
+  left: 5px;
+  transition: all 0.8s ease-in-out;
+}
+
+.linksLayerMenu ul {
+  list-style: none;
+  text-align: center;
+  padding-top: 35px;
+}
+
+.linksLayerMenu ul li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.linksLayerMenu ul li a {
+  color: #FFF;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: Capitalize;
+}
+
 
 /* CONTACTO */
 
